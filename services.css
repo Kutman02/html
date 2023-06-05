@@ -1,0 +1,95 @@
+/* Общие стили для всей страницы */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+/* Стили для раздела "Услуги автосалона" */
+.services {
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+.services p {
+  margin-bottom: 40px;
+}
+
+.services li h3 {
+  font-size: 22px;
+}
+
+/* Стили для раздела "Сервисный центр" */
+.service {
+  padding: 40px;
+}
+
+.service p {
+  margin-bottom: 40px;
+}
+
+.service li h3 {
+  font-size: 22px;
+}
+
+/* Стили для формы */
+.form-container {
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #004d99;
+}

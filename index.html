@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автосалон Арген</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="cars.html">Автомобили</a></li>
+      <li><a href="services.html">Услуги и сервис</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="contact.html">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+
+  <header>
+    <h1>Добро пожаловать в наш автосалон Арген</h1>
+    <p>Здесь вы можете найти широкий выбор автомобилей по выгодной цене</p>
+  </header>
+
+  <section class="banner">
+    <h2>Посмотрите нашу коллекцию автомобилей</h2>
+    <a href="cars.html">Перейти к автомобилям</a>
+  </section>
+  <section class="features">
+    <h2>Наши особенности</h2>
+    <ul>
+      <li>Большой выбор новых и подержанных автомобилей</li>
+      <li>Финансирование и страхование</li>
+      <li>Сервис и ремонт</li>
+      <li>Пробные поездки и обмен автомобилями</li>
+    </ul>
+  </section>
+</main>
+
+<main>
+  <section class="search">
+    <h2>Поиск автомобилей</h2>
+    <form action="#" method="get">
+      <label for="make">Марка:</label>
+      <select id="make" name="make">
+        <option value="">Любая</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Honda">Honda</option>
+        <option value="Ford">Ford</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="Nissan">Nissan</option>
+      </select>
+      <br>
+      <label for="model">Модель:</label>
+      <select id="model" name="model">
+        <option value="">Любая</option>
+        <option value="Camry">Camry</option>
+        <option value="Civic">Civic</option>
+        <option value="Focus">Focus</option>
+        <option value="Malibu">Malibu</option>
+        <option value="Altima">Altima</option>
+      </select>
+      <br>
+      <label for="year">Год выпуска:</label>
+      <input type="number" id="year" name="year" min="1900" max="2030" step="1" value="">
+      <br>
+      <label for="price">Цена:</label>
+      <input type="range" id="price" name="price" min="0" max="1000000" step="10000" value="500000">
+      <br>
+      <button type="submit">Поиск</button>
+    </form>
+  </section>
+
+  <section class="features">
+    <h2>Преимущества нашего автосалона</h2>
+    <ul>
+      <li><i class="fa fa-check"></i> Огромный выбор новых и подержанных автомобилей</li>
+      <li><i class="fa fa-check"></i> Конкурентные цены и акции на автомобили</li>
+      <li><i class="fa fa-check"></i> Качественный сервис и обслуживание автомобилей</li>
+      <li><i class="fa fa-check"></i> Большой выбор дополнительного оборудования и аксессуаров</li>
+      <li><i class="fa fa-check"></i> Возможность оформить кредит или лизинг на автомобиль</li>
+    </ul>
+  </section>
+</main>
+
+<style>
+  .gallery {
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .gallery-images img {
+    max-width: 100%;
+    height: auto;
+  }
+/* Styles for gallery section */
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.gallery-images img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles for search section */
+.search {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.search select,
+.search input[type="number"],
+.search input[type="range"] {
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.search button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.search button[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #4caf50;
+}
+</style>
+
+
+  <footer>
+    <h2>Свяжитесь с нами</h2>
+    <p>Наш адрес: г.Бишкек</p>
+    <p>Телефон: 0704556677</p>
+    <p>Email: info@autosalon.com</p>
+    <form action="/submit-form">
+      <label for="feedback">Оставьте свой отзыв:</label><br>
+      <textarea id="feedback" name="feedback"></textarea><br>
+      <button type="submit">Отправить</button>
+    </form>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* Style the navigation bar */
+body{
+  font-family: Arial, sans-serif;
+}
+nav {
+  background-color: #000029;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Style the header */
+header {
+  background-color: #f5f5f5;
+  padding: 50px;
+  text-align: center;
+}
+
+header h1 {
+  color: #333;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+header p {
+  color: #555;
+  font-size: 20px;
+}
+
+/* Style the main section */
+main {
+  padding: 50px;
+}
+
+.banner {
+  background-image: url("car-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner h2 {
+  color: #02010e;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.banner a {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: #000029;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.banner a:hover {
+  background-color: #4d4d4d;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.features h2 {
+  color: #4d4d4d;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  color: #4d4d4d;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style the gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+/* Style the search form */
+.search {
+  margin-top: 50px;
+}
+
+.search label {
+  display: block;
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.search select {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.search button {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.search button:hover {
+  background-color: #4d4d4d;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Style the footer */
+footer {
+  background-color: #4d4d4d;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}

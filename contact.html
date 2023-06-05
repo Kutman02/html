@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-Ghf7SMDaR0+XuJ7mJvHXa9g40sdjgekzJRt7L3lqy+0Kg8/c/YJvcx7h5MvX9dj5" crossorigin="anonymous">
+
+  
+</head>
+<body>
+  <header>
+    <!-- код для шапки страницы, включая логотип, меню и т.д. -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="cars.html">Автомобили</a></li>
+        <li><a href="services.html">Услуги и сервис</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="address">
+      <h2>Адрес автосалона</h2>
+      <p>Наш автосалон находится по адресу: г. Бишкек Ак-ордо</p>
+      <div class="map">
+        <!-- интерактивная карта Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.269165762508!2d74.57293083915725!3d42.88826747126872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec80c205f5581%3A0x743c4f25027001c1!2z0JjQodCY0KLQng!5e0!3m2!1sru!2skg!4v1682860333152!5m2!1sru!2skg" height="400" width="635" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <h2>Контактная информация</h2>
+      <ul>
+        <li>Телефон: 0776565555</li>
+        <li>Электронная почта: info@autosalon.com</li>
+        <li>Социальные сети:
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/autosalon"><i class="fab fa-facebook"></i>Facebook</a></li>
+            <li><a href="https://www.instagram.com/autosalon"><i class="fab fa-instagram"></i>Instagram</a></li>
+            <li><a href="https://twitter.com/autosalon"><i class="fab fa-twitter"></i>Twitter</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    
+
+    <section class="feedback">
+      <h2>Форма обратной связи</h2>
+      <form action="send.php" method="POST">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Электронная почта</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <!-- код для футера страницы, включая контактную информацию -->
+    <footer>
+      <h2>Свяжитесь с нами</h2>
+      <p>Наш адрес: г.Бишкек</p>
+      <p>Телефон: 0778655555</p>
+      <p>Email: info@autosalon.com</p>
+      <form action="/submit-form">
+        <label for="feedback">Оставьте свой отзыв:</label><br>
+        <textarea id="feedback" name="feedback"></textarea><br>
+        <button type="submit">Отправить</button>
+      </form>
+    </footer>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Услуги и сервис</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="services.css">
+</head>
+<body>
+  <header>
+    <!-- код для шапки страницы, включая логотип, меню и т.д. -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="cars.html">Автомобили</a></li>
+        <li><a href="services.html">Услуги и сервис</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="services">
+      <h2>Услуги автосалона</h2>
+      <p>Наш автосалон предлагает широкий спектр услуг, чтобы удовлетворить все ваши потребности в автомобильном обслуживании.</p>
+      <ul>
+        <li>
+          <h3>Продажа автомобилей</h3>
+          <p>У нас вы можете приобрести новые и б/у автомобили разных марок и моделей.</p>
+        </li>
+        <li>
+          <h3>Обмен автомобиля</h3>
+          <p>Мы предлагаем обмен вашего старого автомобиля на новый или б/у автомобиль в нашем автосалоне.</p>
+        </li>
+        <li>
+          <h3>Финансирование</h3>
+          <p>Мы предлагаем выгодные условия финансирования на приобретение нового или б/у автомобиля.</p>
+        </li>
+        <li>
+          <h3>Страхование</h3>
+          <p>Мы поможем оформить полис страхования на ваш новый или б/у автомобиль.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="service">
+      <h2>Сервисный центр</h2>
+      <p>Наш сервисный центр предоставляет высококачественное обслуживание и ремонт вашего автомобиля.</p>
+      <ul>
+        <li>
+          <h3>Общий технический осмотр</h3>
+          <p>Мы проводим комплексный технический осмотр вашего автомобиля для определения неисправностей и необходимых ремонтов.</p>
+        </li>
+        <li>
+          <h3>Ремонт и замена деталей</h3>
+          <p>Мы предоставляем широкий спектр услуг по ремонту и замене деталей вашего автомобиля.</p>
+        </li>
+        <li>
+          <h3>Техническое обслуживание</h3>
+          <p>Мы предлагаем периодическое техническое обслуживание вашего автомобиля для поддержания
+            его в отличном состоянии.</p>
+          </li>
+          <li>
+          <h3>Диагностика и ремонт двигателя</h3>
+          <p>Мы проводим диагностику и ремонт двигателя вашего автомобиля для его бесперебойной работы.</p>
+          </li>
+          <li>
+          <h3>Ремонт ходовой части</h3>
+          <p>Мы предоставляем услуги по ремонту и замене деталей ходовой части вашего автомобиля.</p>
+          </li>
+          <li>
+          <h3>Кузовной ремонт</h3>
+          <p>Мы предлагаем услуги по ремонту кузова вашего автомобиля после ДТП.</p>
+          </li>
+          </ul>
+          </section>
+          <section class="booking">
+            <h2>Записаться на сервис</h2>
+            <p>Чтобы записаться на сервис или получить дополнительную информацию о наших услугах, заполните форму ниже.</p>
+            <form action="submit.php" method="POST">
+              <label for="name">Имя:</label>
+              <input type="text" id="name" name="name" required>
+          
+              <label for="phone">Телефон:</label>
+              <input type="tel" id="phone" name="phone" required>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="service">Выберите услугу:</label>
+              <select id="service" name="service">
+                <option value="general">Общий технический осмотр</option>
+                <option value="repair">Ремонт и замена деталей</option>
+                <option value="maintenance">Техническое обслуживание</option>
+                <option value="engine">Диагностика и ремонт двигателя</option>
+                <option value="suspension">Ремонт ходовой части</option>
+                <option value="body">Кузовной ремонт</option>
+              </select>
+          
+              <label for="date">Дата:</label>
+              <input type="date" id="date" name="date" required>
+          
+              <label for="time">Время:</label>
+              <input type="time" id="time" name="time" required>
+          
+              <label for="message">Дополнительная информация:</label>
+              <textarea id="message" name="message"></textarea>
+          
+              <button type="submit">Отправить</button>
+            </form>
+          </section>
+        </main>
+        <footer>
+          <!-- код для подвала страницы, включая контактную информацию и т.д. -->
+          <footer>
+            <h2>Свяжитесь с нами</h2>
+            <p>Наш адрес: г.Бишкек</p>
+            <p>Телефон: 0779544666</p>
+            <p>Email: info@autosalon.com</p>
+            <form action="/submit-form">
+              <label for="feedback">Оставьте свой отзыв:</label><br>
+              <textarea id="feedback" name="feedback"></textarea><br>
+              <button type="submit">Отправить</button>
+            </form>
+          </footer>
+        </footer>
+      </body>
+      </html>          

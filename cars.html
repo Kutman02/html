@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автосалон Арген</title>
+  <link rel="stylesheet" href="cars.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="cars.html">Автомобили</a></li>
+      <li><a href="services.html">Услуги и сервис</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="contact.html">Контакты</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Автомобили</h1>
+  </header>
+  <main>
+    <section class="categories">
+      <h2>Категории автомобилей</h2>
+      <ul>
+        <li><a href="#">Новые автомобили</a></li>
+        <li><a href="#">Подержанные автомобили</a></li>
+        <li><a href="#">Специальные предложения</a></li>
+      </ul>
+    </section>
+    <section class="filters">
+      <h2>Фильтры</h2>
+      <form action="#" method="get">
+        <label for="make">Марка:</label>
+        <select id="make" name="make">
+          <option value="">Любая</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Honda">Honda</option>
+          <option value="Ford">Ford</option>
+          <option value="Chevrolet">Chevrolet</option>
+          <option value="Nissan">Nissan</option>
+        </select>
+        <br>
+        <label for="model">Модель:</label>
+        <select id="model" name="model">
+          <option value="">Любая</option>
+          <option value="Camry">Camry</option>
+          <option value="Civic">Civic</option>
+          <option value="Focus">Focus</option>
+          <option value="Malibu">Malibu</option>
+          <option value="Altima">Altima</option>
+        </select>
+        <br>
+        <label for="year">Год выпуска:</label>
+        <input type="number" id="year" name="year" min="1900" max="2030" step="1" value="">
+        <br>
+        <label for="price">Цена:</label>
+        <input type="range" id="price" name="price" min="0" max="1000000" step="10000" value="500000">
+        <br>
+        <button type="submit">Поиск</button>
+      </form>
+    </section>
+    <section class="cars">
+      <h2>Автомобили</h2>
+      <ul>
+        <li>
+          <img src="1.jpg" alt="Toyota Camry">
+          <h3>Toyota Camry</h3>
+          <ul>
+            <li>Год выпуска: 2019</li>
+            <li>Пробег: 10 000 км</li>
+            <li>Цена: 1 500 000 сом</li>
+            <li>Категория: подержанные автомобили</li>
+          </ul>
+          <p>Просторный и комфортный автомобиль, подходящий для длительных поездок на дальние расстояния. Надежный двигатель и просторный багажник делают его идеальным выбором для семьи или бизнеса.</p>
+          <br>
+          <br>
+          <button>Связаться с нами</button>
+        </li>
+        <li>
+          <img src="2.jpg" alt="BMW X5">
+          <h3>BMW X5</h3>
+          <ul>
+            <li>Год выпуска: 2021</li>
+            <li>Пробег: 0 км</li>
+            <li>Цена: 3 500 000 сом</li>
+            <li>Категория: новые автомобили</li>
+          </ul>
+          <p>Спортивный и элегантный автомобиль с превосходными динамическими характеристиками. Идеальный выбор для любителей скорости и комфорта в одном автомобиле.</p>
+<br>
+<br>
+          <button>Связаться с нами</button>
+        </li>
+        <li>
+          <img src="3.jpg" alt="Kia Sportage">
+          <h3>Kia Sportage</h3>
+          <ul>
+            <li>Год выпуска: 2020</li>
+            <li>Пробег: 20 000 км</li>
+            <li>Цена: 1 800 000 сом</li>
+            <li>Категория: подержанные автомобили</li>
+          </ul>
+          <p>Описание: Удобный и надежный автомобиль, подходящий для городских и загородных поездок. Современный дизайн и комфортабельный салон позволят наслаждаться каждой поездкой.</p>
+    <br>
+    <br>
+          <button>Связаться с нами</button>
+        </li>
+      </ul>
+    </section>
+ 
+  <footer>
+    <footer>
+      <h2>Свяжитесь с нами</h2>
+      <p>Наш адрес: г.Бишкек Ак-ордо</p>
+      <p>Телефон: 0778994455</p>
+      <p>Email: info@autosalon.com</p>
+      <form action="submit-form">
+        <label for="feedback">Оставьте свой отзыв:</label><br>
+        <textarea id="feedback" name="feedback"></textarea><br>
+        <button type="submit">Отправить</button>
+      </form>
+    </footer>
+    <p>© 2023 Автосалон "Новые автомобили". Все права защищены.</p>
+  </footer>
+  </body>
+  </html>

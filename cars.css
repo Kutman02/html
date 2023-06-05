@@ -1,0 +1,226 @@
+/* Стили для секции с автомобилями */
+.cars {
+  margin: 40px 0;
+  text-align: center;
+}
+
+/* Стили для списка автомобилей */
+.cars ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+/* Стили для каждого элемента списка автомобилей */
+.cars ul li {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Стили для изображения автомобиля */
+.cars ul li img {
+  max-width: 100%;
+}
+
+/* Стили для заголовка каждого элемента списка */
+.cars ul li h3 {
+  color: #333;
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+/* Стили для списка характеристик каждого автомобиля */
+.cars ul li ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для каждой характеристики автомобиля */
+.cars ul li ul li {
+  color: #999;
+  font-size: 14px;
+  list-style: none;
+  margin: 5px 0;
+  padding: 0;
+}
+
+/* Стили для кнопки запроса на пробную поездку */
+.cars ul li button {
+  background-color: #007aff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Стили для кнопки запроса на пробную поездку при наведении курсора */
+.cars ul li button:hover {
+  background-color: #0058ad;
+}
+
+/* Стили для кнопки обратной связи */
+.cars form button[type="submit"] {
+  background-color: #007aff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Стили для кнопки обратной связи при наведении курсора */
+.cars form button[type="submit"]:hover {
+  background-color: #0058ad;
+}
+
+/* Стили для фильтров поиска */
+.cars form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+ /*Стили для каждого фильтра*/
+.cars form label {
+font-size: 14px;
+margin-right: 10px;
+}
+
+/* Стили для выпадающего списка */
+.cars form select {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  margin-right: 10px;
+  width: 200px;
+  }
+  
+  /* Стили для текстового поля поиска */
+  .cars form input[type="text"] {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  margin-right: 10px;
+  width: 200px;
+  }
+  
+  /* Стили для кнопки поиска */
+  .cars form button[type="submit"] {
+  background-color: #007aff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  transition: all 0.2s ease-in-out;
+  }
+  
+  /* Стили для кнопки поиска при наведении курсора */
+  .cars form button[type="submit"]:hover {
+  background-color: #0058ad;
+  }
+
+
+  /* Стили для категорий автомобилей */
+.categories {
+  margin: 50px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.categories h2 {
+  margin-bottom: 20px;
+}
+
+.categories ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories li {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.categories li a {
+  display: block;
+  padding: 20px;
+  background-color: #f7f7f7;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.categories li a:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+
+/* стили для фильтрации */
+.filters {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.filters h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.filters label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.filters select,
+.filters input[type="range"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filters button:hover {
+  background-color: #3e8e41;
+}

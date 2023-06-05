@@ -1,0 +1,57 @@
+/* Стили для секций */
+.about,
+.team,
+.awards {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+/* Стили для заголовков секций */
+.about h2,
+.team h2,
+.awards h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Стили для текста */
+.about p,
+.team p,
+.awards p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Стили для списка */
+.awards ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.awards li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Стили для футера */
+footer {
+  background-color: #000029;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
